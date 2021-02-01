@@ -1,0 +1,18 @@
+<div class="form-group" *ngFor="let user of loggedUsers">
+        <label>Username:
+                <input type="text" value="{{user.username}}" readonly="readonly">
+        </label>
+        <label>First Name
+                <input type="text" value="{{user.firstName}}" readonly="readonly">
+        </label>
+        <label>Last Name
+                <input type="text" value="{{user.lastName}}" readonly="readonly">
+        </label>
+        <label>Email
+                <input type="text" value="{{user.email}}" readonly="readonly">
+        </label>
+        <label>Address
+                <textarea value="Smith" rows="3" class="input-xlarge" readonly="readonly">{{user.address}}
+            </textarea>
+        </label>
+</div>
